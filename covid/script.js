@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var url = "https://api.covid19india.org/data.json"
 
+    alert("for better experience,switch to desktop view ")
     $.getJSON(url, function(data) {
         console.log(data)
 
@@ -73,7 +74,10 @@ $(document).ready(function() {
                     }
                 ]
             },
-            options: {}
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
 
         })
 
